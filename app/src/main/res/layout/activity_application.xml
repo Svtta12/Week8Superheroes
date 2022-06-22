@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ApplicationActivity"
+    android:background="@drawable/fon">
+
+    <TextView
+        android:id="@+id/text_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/app"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_author"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/icons85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_app"
+        app:layout_constraintEnd_toStartOf="@id/text_author"
+        app:layout_constraintBottom_toTopOf="@id/image_telegram"/>
+
+    <TextView
+        android:id="@+id/text_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/textAuthor"
+        android:textSize="18sp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintStart_toEndOf="@id/image_author"
+        app:layout_constraintTop_toTopOf="@id/image_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/image_author"/>
+
+    <ImageView
+        android:id="@+id/image_telegram"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/icons84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_author"
+        app:layout_constraintEnd_toStartOf="@id/text_telegram"/>
+
+    <TextView
+        android:id="@+id/text_telegram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/telegram"
+        android:textSize="18sp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintStart_toEndOf="@id/image_telegram"
+        app:layout_constraintTop_toTopOf="@id/image_telegram"/>
+
+
+    <ImageView
+        android:id="@+id/image_github"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/icons83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_telegram"
+        app:layout_constraintEnd_toStartOf="@id/text_github"/>
+
+    <TextView
+        android:id="@+id/text_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/github"
+        android:textSize="18sp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintStart_toEndOf="@id/image_github"
+        app:layout_constraintTop_toTopOf="@id/image_github"/>
+
+    <TextView
+        android:id="@+id/text_github2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/https_github"
+        android:textSize="18sp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintStart_toEndOf="@id/text_github"
+        app:layout_constraintTop_toTopOf="@id/image_github"
+        android:autoLink="web"/>
+
+    <ImageView
+        android:id="@+id/image_date"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/icons82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_github"
+        app:layout_constraintEnd_toStartOf="@id/text_date"/>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/date"
+        android:textSize="18sp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintStart_toEndOf="@id/image_date"
+        app:layout_constraintTop_toTopOf="@id/image_date" />
+
+    <ImageView
+        android:id="@+id/image_strength"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/icons81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_date"
+        app:layout_constraintEnd_toStartOf="@id/text_strength"/>
+
+    <TextView
+        android:id="@+id/text_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/strength"
+        android:textSize="18sp"
+        android:textColor="#7A7A7A"
+        app:layout_constraintStart_toEndOf="@id/image_strength"
+        app:layout_constraintTop_toTopOf="@id/image_strength"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
